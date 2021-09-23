@@ -40,5 +40,7 @@ visit_repository.save(visit4)
 
 print(user_repository.select_all()[0].id)
 print(user_repository.locations(user1))
+print(location_repository.select_all()[0].id)
+print(location_repository.users(location2))
 
 # pdb.set_trace()
