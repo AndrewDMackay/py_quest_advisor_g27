@@ -38,4 +38,7 @@ visit_repository.save(visit3)
 visit4 = Visit(user2, location2, '3 stars, too crowded, could not find my wizard friend')
 visit_repository.save(visit4)
 
-pdb.set_trace()
+print(user_repository.select_all()[0].id)
+print(user_repository.locations(user1))
+
+# pdb.set_trace()

@@ -15,7 +15,7 @@ CREATE TABLE locations (
 
 CREATE TABLE visits (
   id SERIAL PRIMARY KEY,
-  user_id INT REFERENCES user(id) ON DELETE CASCADE,
+  user_id INT REFERENCES users(id) ON DELETE CASCADE,
   location_id INT REFERENCES locations(id) ON DELETE CASCADE,
   review TEXT
 );
